@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tables.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logos-identifiers">
+            <img class="personal-logo" src="./img/mj3_Mesa_de_trabajo_1.jpg" alt="personal logo">
+            <div class="its-me"></div>
+        </div>
+    </header>
+    <main>
+        <section class="welcome-text">
+            <div class="Iam">
+                <p>Hi, I'm</p>
+                <h1>MIKE JOYA</h1>
+                <p>I am a <span class="know"></span></p>
+            </div>
+        </section>
+        <section class="info-list">
+            <ul class="interactive-list">
+                <li class="about border__top" ><a href="#text-about">About</a></li>
+                <li class="works" ><a href="#works">Work's</a></li>
+                <li class="follow" ><a href="#social-media">Follow Me</a></li>
+                <li class="contact border__bottom"><a href="#contact-my">Contact</a></li>
+            </ul>
+        </section>
+        <!--<section class="icons__technologies">
+            <picture>
+                <img src="https://i.pinimg.com/236x/15/3e/d9/153ed9c58d1e02b90dee3664f3c0da56.jpg" alt="">
+            </picture>
+        </section>-->
+        <div class="main__content">
+            <section class="container-about" id="text-about">
+                <h1>ABOUT</h1>
+                <p>¡Hola! Mi nombre es Michael Joya y soy un desarrollador  frontend de Bogotá, Colombia. Llegué a este campo  aprendiendo
+                    solo desde mi escritorio. Durante el tiempo que he  dedicado a aprender, he manejado diferentes tecnologías  como Git,
+                    GitHub, JavaScript, CSS y HTML. Me apasiona mejorar cada  día en mi campo, ya que la programación me ha permitido  crear
+                 diferentes formas de ver el mundo con mis propias manos.  Soy una persona muy perfeccionista y espero poder ayudar a
+                 otros a alcanzar sus objetivos profesionales. 
+                 <br>
+                 En mi tiempo libre, me encanta aprender cosas nuevas y  estar al tanto de las últimas tendencias en tecnología.  También
+                 disfruto de la música, el futbol y la lectura, y me  encanta pasar tiempo con mi familia y amigos. Si tienes  alguna pregunta o estás
+                 interesado en trabajar junto a mi, no dudes en ponerte en  contacto conmigo. ¡Estoy emocionado de ver cómo podemos  colaborar
+                 para alcanzar tus objetivos!
+                </p>
+        </section>
+        <section class="container-slider" id="works">
+            <h1>WORK'S</h1>
+            <div class="slider__container container">
+                <img src="https://img.icons8.com/3d-fluency/94/null/back.png" class="slider__arrow" id="before" alt="Arrowleft">
+
+                <section class="slider__body slider__body--show" data-id="1">
+                    <div class="slider__text">
+                        <h2 class="subtitle">Proyecto1</h2>
+                    </div>
+                    <figure class="slider__picture">
+                        <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="slider__body" data-id="2">
+                    <div class="slider__text">
+                        <h2 class="subtitle">Proyecto2</h2>
+                    </div>
+                    <figure class="slider__picture">
+                        <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
+                    </figure>
+                </section>
+
+                <section class="slider__body" data-id="3">
+                    <div class="slider__text">
+                        <h2 class="subtitle">Proyecto3</h2>
+                    </div>
+                    <figure class="slider__picture">
+                        <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
+                    </figure>
+                </section>
+
+                <img src="https://img.icons8.com/3d-fluency/94/null/forward.png" class="slider__arrow" id="next" alt="Arrowright">
+            </div>
+        </section>
+        <section class="container-social--media" id="social-media">
+            <h1>SOCIAL MEDIA</h1>
+            <div class="container__icon">
+                <a class="icon" href="#"><img src="./icons/instagram.svg" alt="instagram"></a>
+                <a class="icon" href="#"><img src="./icons/twitter.svg" alt="twitter"></a>
+                <a class="icon" href="#"><img src="./icons/facebook.svg" alt="facebook"></a>
+                <a class="icon" href="#"><img src="./icons/linkendin.svg" alt="linkendin"></a>
+                <a class="icon" href="#"><img src="./icons/github.svg" alt="github"></a>
+                <a class="icon" href="#"><img src="./icons/discord.svg" alt="discord"></a>
+            </div>
+        </section>
+        <section class="contac" id="contact-my">
+            <h1 class="tag">HABLEMOS</h1>
+                <form id="form" class="form" action="#" method="POST">
+                    <div class="input-container">
+                        <input name="name" class="space__text" type="text" id="name" >
+                        <label for="name">Nombre*</label>
+                        <small></small>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" class="space__text" type="email" id="email" >
+                        <label for="email">Correo electronico*</label>
+                        <small></small>
+                    </div>
+                    <div class="input-container text__area">
+                        <textarea name="message" class="space__text" id="message" cols="30" rows="10" ></textarea>
+                        <label for="message">Mensaje</label>
+                        <small></small>
+                    </div>
+                    <button type="submit" class="btn primary full">Enviar Mensaje</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div><h3>© 2023 Personal Brand by Michael Joya</h3></div>
+    </footer>
+    <script src="./javaScript/index.js"></script>
+</body>
+</html>

@@ -7,39 +7,47 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/tables.css" media="(min-width: 600px)">
     <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
-    <title>Document</title>
+    <title>Mike Joya</title>
 </head>
 <body>
+    <!---   header logo personal	-->
     <header>
         <div class="logos-identifiers">
-            <img class="personal-logo" src="./img/mj3_Mesa_de_trabajo_1.jpg" alt="personal logo">
-            <div class="its-me"></div>
+            <img class="personal-logo" src="./img/mj3.png" alt="personal logo">
+            <!--<div class="its-me"></div>-->
         </div>
     </header>
+    <!---   Main contenido informativo	-->
     <main>
+        <!---   Presentacion	-->
         <section class="welcome-text">
             <div class="Iam">
-                <p>Hi, I'm</p>
+                <p>Hola, Yo soy</p>
                 <h1>MIKE JOYA</h1>
-                <p>I am a <span class="know"></span></p>
+                <p>Soy un <span class="know"></span></p>
             </div>
         </section>
+        <!---   Lista de todo el contenido	-->
         <section class="info-list">
             <ul class="interactive-list">
-                <li class="about border__top" ><a href="#text-about">About</a></li>
-                <li class="works" ><a href="#works">Work's</a></li>
-                <li class="follow" ><a href="#social-media">Follow Me</a></li>
-                <li class="contact border__bottom"><a href="#contact-my">Contact</a></li>
+                <li class="about border__top" ><a href="#text-about">Sobre mi</a></li>
+                <li class="works" ><a href="#works">Proyectos</a></li>
+                <li class="follow" ><a href="#social-media">Redes Sociales</a></li>
+                <li class="contact border__bottom"><a href="#contact-my">Contactame</a></li>
             </ul>
         </section>
-        <!--<section class="icons__technologies">
+        <!---   Imagen personal	-->
+        <section class="its-me">
             <picture>
-                <img src="https://i.pinimg.com/236x/15/3e/d9/153ed9c58d1e02b90dee3664f3c0da56.jpg" alt="">
+                <img src="./img/173113519_469312070957344_7423402803933461912_n(1).jpg" alt="">
             </picture>
-        </section>-->
+        </section>
+
+        <!---   Contenido especifico	-->
         <div class="main__content">
+            <!---   Informacion de quien soy	-->
             <section class="container-about" id="text-about">
-                <h1>ABOUT</h1>
+                <h1>SOBRE MI</h1>
                 <p>¡Hola! Mi nombre es Michael Joya y soy un desarrollador  frontend de Bogotá, Colombia. Llegué a este campo  aprendiendo
                     solo desde mi escritorio. Durante el tiempo que he  dedicado a aprender, he manejado diferentes tecnologías  como Git,
                     GitHub, JavaScript, CSS y HTML. Me apasiona mejorar cada  día en mi campo, ya que la programación me ha permitido  crear
@@ -52,8 +60,9 @@
                  para alcanzar tus objetivos!
                 </p>
         </section>
+        <!---   Proyectos 	-->
         <section class="container-slider" id="works">
-            <h1>WORK'S</h1>
+            <h1>PROYECTOS</h1>
             <div class="slider__container container">
                 <img src="https://img.icons8.com/3d-fluency/94/null/back.png" class="slider__arrow" id="before" alt="Arrowleft">
 
@@ -61,34 +70,85 @@
                     <div class="slider__text">
                         <h2 class="subtitle">Proyecto1</h2>
                     </div>
-                    <figure class="slider__picture">
-                        <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
-                    </figure>
+                    <a href="https://mikejoya.github.io/rest-countries-api-with-color-theme-switcher-master/">
+                        <figure class="slider__picture">
+                            <img src="./img/Opera Captura de pantalla_2023-03-08_184804_mikejoya.github.io.png" class="slider__img" alt="">
+                        </figure>
+                    </a>
                 </section>
 
                 <section class="slider__body" data-id="2">
                     <div class="slider__text">
                         <h2 class="subtitle">Proyecto2</h2>
                     </div>
-                    <figure class="slider__picture">
-                        <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
-                    </figure>
+                    <a href="https://mikejoya.github.io/Creation-of-movie-application-consumption-of-Api-The-MovieDB/">
+                        <figure class="slider__picture">
+                            <img src="./img/Opera Captura de pantalla_2023-03-08_184648_mikejoya.github.io.png" class="slider__img" alt="">
+                        </figure>
+                    </a>
                 </section>
 
                 <section class="slider__body" data-id="3">
                     <div class="slider__text">
                         <h2 class="subtitle">Proyecto3</h2>
                     </div>
-                    <figure class="slider__picture">
-                        <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
-                    </figure>
+                    <a href="">
+                        <figure class="slider__picture">
+                            <img src="https://i.pinimg.com/564x/f3/9e/0a/f39e0a426afef2f7dcf97096b97cce71.jpg" class="slider__img" alt="">
+                        </figure>
+                    </a>
                 </section>
 
                 <img src="https://img.icons8.com/3d-fluency/94/null/forward.png" class="slider__arrow" id="next" alt="Arrowright">
             </div>
         </section>
+        <!---   Posible remplazo para los sladers seran mas informativos	-->
+        <section class="slader-container" id="works">
+            <h1>PROYECTOS</h1>
+            <div class="container-proyects">
+                <article class="container-info--proyects">
+                    <figure>
+                        <img src="./img/rsz_opera_captura_de_pantalla_2023-03-08_184804_mikejoyagithubio.png" alt="">
+                    </figure>
+                    <div class="info-text">
+                        <h3>Buscador de paises</h3>
+                        <p>Devuelve todos los paises, Ademas de filtrarlos por continente se pueden buscar directamente por el nombre.</p>
+                    </div>
+                </article>
+                <article class="container-info--proyects">
+                    <figure>
+                        <img src="./img/Opera Captura de pantalla_2023-03-09_200126_github.com.png" alt="">
+                    </figure>
+                    <div class="info-text">
+                        <h3>Buscador de paises</h3>
+                        <p>Devuelve todos los paises, Ademas de filtrarlos por continente se pueden buscar directamente por el nombre.</p>
+                    </div>
+                </article>
+                <article class="container-info--proyects">
+                    <figure>
+                        <img src="./img/4Opera Captura de pantalla_2023-03-09_200521_mikejoya.github.io.png" alt="">
+                    </figure>
+                    <div class="info-text">
+                        <h3>Buscador de paises</h3>
+                        <p>Devuelve todos los paises, Ademas de filtrarlos por continente se pueden buscar directamente por el nombre.</p>
+                    </div>
+                </article>
+                <article class="container-info--proyects">
+                    <figure>
+                        <img src="./img/9Opera Captura de pantalla_2023-03-09_201047_mikejoya.github.io.png" alt="">
+                    </figure>
+                    <div class="info-text">
+                        <h3>Buscador de paises</h3>
+                        <p>Devuelve todos los paises, Ademas de filtrarlos por continente se pueden buscar directamente por el nombre.</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="reminder">No olvides visitar mi GitHub para mas proyectos realizados por Mike Joya</p>
+        </section>
+        <!---   Redes sociales	-->
         <section class="container-social--media" id="social-media">
-            <h1>SOCIAL MEDIA</h1>
+            <h1>REDES SOCIALES</h1>
             <div class="container__icon">
                 <a class="icon" href="#"><img src="./icons/instagram.svg" alt="instagram"></a>
                 <a class="icon" href="#"><img src="./icons/twitter.svg" alt="twitter"></a>
@@ -98,6 +158,7 @@
                 <a class="icon" href="#"><img src="./icons/discord.svg" alt="discord"></a>
             </div>
         </section>
+        <!---   contactarme	-->
         <section class="contac" id="contact-my">
             <h1 class="tag">HABLEMOS</h1>
                 <form id="form" class="form" action="#" method="POST">
@@ -121,9 +182,11 @@
             </section>
         </div>
     </main>
+    <!---   Footer	-->
     <footer>
-        <div><h3>© 2023 Personal Brand by Michael Joya</h3></div>
+        <div><h3>© 2023 Personal Brand by <a href="#">Michael Joya</a></h3></div>
     </footer>
+    <!---   Logica de la pagina	-->
     <script src="./javascript/index.js"></script>
 </body>
 </html>

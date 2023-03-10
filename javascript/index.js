@@ -2,7 +2,7 @@ console.log('Hola Mundo');
 /*------------------------Efecto de escritura--------------------------*/
 const profession = document.querySelector('.know');
 
-const words = ["Frontend Developer.", "Web Developer.",];
+const words = ["Frontend Developer.", ];
 
 let index = 0;
 let counter = 0;
@@ -13,10 +13,10 @@ function changeWord(){
     if(writing){
         profession.textContent += word.charAt(counter);
         counter++;
-        if(profession.textContent === word){
+        /*if(profession.textContent === word){
             writing = false;
-        }
-    }else{
+        }*/
+    }/*else{
         profession.textContent = profession.textContent.slice(0, -1);
         counter--;
         if(counter === 0){
@@ -24,25 +24,40 @@ function changeWord(){
             counter = 0;
             index = (index + 1) % words.length;
         }
-    }    
+    }    */
 }
 setInterval(changeWord, 300);
 /*----------------------------- animation index----------------------*/
+
+
 
 const buttonLis = document.querySelectorAll('.interactive-list li a');
 
 buttonLis.forEach((link) =>{
     link.addEventListener('click', (e) =>{
         e.preventDefault();
+        const sectionWorksFirts = document.querySelector('.container-slider');
+        const sectionWorksSecond = document.querySelector('.slader-container');
+        console.log(sectionWorksFirts);
+        
+        if(sectionWorksFirts.offsetParent === null){
+            sectionWorksFirts.removeAttribute('id');
+            sectionWorksSecond.setAttribute('id', 'works');
+            console.log('se fue alto');
+        }else{
+            sectionWorksFirts.setAttribute('id', 'works');
+            sectionWorksSecond.removeAttribute('id');
+            console.log('se fue bajo');
+        }
         const currentId = e.target.attributes.href.value;
         const section = document.querySelector(currentId);
         const sectionPos = section.offsetTop;
-
-        section.scrollIntoView({
-            behavior: 'smooth',
-        });
+        
+            console.log(sectionPos)
+            section.scrollIntoView({
+                behavior: 'smooth',
+            });
     });
-    console.log('lol')
 });
 /*--------------------------------slidershow------------------------*/
 (function() {

@@ -23,22 +23,28 @@ header{
     width: 90%;
     height: 29px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1% 4% 0;
     padding-bottom: 4px;
 }
 .personal-logo{
     width: 32px;
-    border-radius: 50%;
 }
 .its-me{
-    width: 32px;
+    width: 200px;
+    margin: 30px auto;
+    border-radius: 100%;
+    /*width: 32px;
     border-radius: 50%;
     background-color: black;
     background-image: url(../img/173113519_469312070957344_7423402803933461912_n\(1\).jpg);
     background-repeat: no-repeat;
     background-position: 10px left;
-    background-size: 100%;
+    background-size: 100%;*/
+}
+.its-me img{
+    width: 200px;
+    border-radius: 100%;
 }
 /*-------------------Main welcome page------------------------------*/
 main{
@@ -62,6 +68,7 @@ main{
     left: -60px;
 }
 .welcome-text p{
+    width: 210px;
     margin: 0;
 }
 .welcome-text h1{
@@ -122,7 +129,7 @@ ul li:hover a{
     box-shadow: 0px 0px 8px -3px ;
 }
 .main__content{
-    margin-top: 200px;
+    margin-top: 50px;
 }
 /*--------------------------About-----------------------------*/
 .container-about{
@@ -214,6 +221,9 @@ ul li:hover a{
 }
 .slider__arrow:nth-of-type(2){
     justify-self: end;
+}
+.slader-container{
+    display: none;
 }
 /*--------------------------------Social Media--------------*/
 .container-social--media{

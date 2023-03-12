@@ -1,13 +1,18 @@
+:root{
+    ---white:#f2f2f2;
+    ---black:#0D0D0D;
+    ---purple--dark-2: #DE44F2;
+    ---gris: #91919180;
+    ---gradiant: linear-gradient(to left top, #1e0b26, #190c21, #150d1c, #100d16, #0d0d0d);
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.822);
-    background-image: url(https://i.pinimg.com/564x/29/b9/34/29b9347ae3a8ae60b88497cb6f03aabe.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: linear-gradient(to right bottom, #4c1b59, #3c1c4d, #2e1b40, #221932, #191523, #16131f, #14101a, #100d16, #130d1b, #170d1f, #1a0c23, #1e0b26);
+
 }
 /*--------------------------------Header icon with my photo---------*/
 header{
@@ -16,19 +21,18 @@ header{
     top: 0;
     z-index: 2;
     box-shadow: 0px 5px 65px 0px;
-    margin-top: -4px;
-    padding: 1px;
+    margin-top: 0px;
 }
 .logos-identifiers{
     width: 90%;
     height: 29px;
     display: flex;
     justify-content: center;
-    margin: 1% 4% 0;
-    padding-bottom: 4px;
+    margin: 4px 4% 0;
+    padding-bottom: 2px;
 }
 .personal-logo{
-    width: 32px;
+    width: 30px;
 }
 .its-me{
     width: 200px;
@@ -45,6 +49,7 @@ header{
 .its-me img{
     width: 200px;
     border-radius: 100%;
+    box-shadow: 2px 4px 26px 0px #000000;
 }
 /*-------------------Main welcome page------------------------------*/
 main{
@@ -62,7 +67,7 @@ main{
     font-size: 1rem;
 }
 .Iam{
-    color: rgb(153 153 153);
+    color: var(---gris);
     letter-spacing: 0.05rem;
     position: relative;
     left: -60px;
@@ -74,10 +79,10 @@ main{
 .welcome-text h1{
     margin: 0;
     font-size: 1.2rem;
-    color: #F2F2F2;
+    color: var(---white);
 }
 .know{
-    color: #F2F2F2;
+    color: var(---white);
 }
 .info-list{
     margin: 0 auto;
@@ -120,7 +125,7 @@ ul li a {
 }
 
 ul li:hover a{
-    color: #fff;
+    color: var(---white);
 }
 /*-------------------------------icons Technologies-----------------*/
 .icons__technologies{
@@ -136,8 +141,8 @@ ul li:hover a{
     width: 86%;
     height: 320px;
     margin: 0px auto;
-    color: #f2f2f2;
-    background-color: transparent;
+    color: var(---white);
+    background-image: var(---gradiant);
     border-radius: 10px;
     overflow-y: scroll;
     box-shadow: 0px 0px 39px 6px #000000;
@@ -148,7 +153,7 @@ ul li:hover a{
 .container-about p {
     padding: 16px;
     line-height: 1.5rem;
-    color: #919191
+    color: var(---gris);
 }
 
 /*----------------------------------SLIDERSHOW---------------------------*/
@@ -157,7 +162,7 @@ ul li:hover a{
     width: 86%;
     margin: 60px auto;
     padding: 40px 0px;
-    background-color: transparent;
+    background-image: var(---gradiant);
     border-radius: 10px;
     box-shadow: 0px 0px 39px 6px #000000;
 }
@@ -165,7 +170,7 @@ ul li:hover a{
     position: relative;
     top: -20px;
     margin: 10px 0px 0px 16px;
-    color: #f2f2f2;
+    color: var(---white);
 }
 
 .container{
@@ -197,23 +202,23 @@ ul li:hover a{
 }
 .slider__text{
     max-width: 200px;
-    margin: 0 auto;
+    margin: 0 auto 12px;
 }
 .subtitle{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin: 0;
-    color: #85898a;
+    color: var(---gris);
 }
 .slider__picture{
     margin: 6px;
 }
 .slider__img{
-    width: 125px;
+    width: 200px;
     height: 125px;
-    border-radius: 50%;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
     margin: 0 auto;
+    border-radius: 8px;
 }
 .slider__arrow{
     cursor: pointer;
@@ -229,13 +234,14 @@ ul li:hover a{
 .container-social--media{
     width: 86%;
     height: 150px;
-    background-color: transparent;
+    background-image: var(---gradiant);
     margin: 0 auto;
+    padding-top: 1px;
     border-radius: 8px;
     box-shadow: 0px 0px 39px 6px #000000;
 }
 .container-social--media h1{
-    color: #f2f2f2;
+    color: var(---white);
     margin-left: 16px;
 }
 .container__icon{
@@ -254,20 +260,20 @@ ul li:hover a{
 
 .icon img:hover{
     transition: transform 0.5s ease;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 7);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 5);
     transform: scale(1.2);
 }
 /*---------------------Contact with me---------------*/
 .contac{
     width: 86%;
     height: 100%;
-    background-color: transparent;
+    background-image: var(---gradiant);
     border-radius: 6px;
     box-shadow: 0px 0px 39px 6px;
     margin: 60px auto 0;
 }
 .tag{
-    color: #f2f2f2;
+    color: var(---white);
     margin-left: 16px;
     padding-top: 26px;
 }
@@ -279,7 +285,7 @@ ul li:hover a{
     margin: 0 auto;
 }
 .form h1{
-    color: #f2f2f2;
+    color: var(---white);
     margin-left: 16px;
 }
 .input-container{
@@ -303,7 +309,7 @@ ul li:hover a{
     position: absolute;
     top: 3px;
     left: 16px;
-    color: #85898a;
+    color: var(---gris);
     text-transform: capitalize;
     font-size: 0.8rem;
     transition: top .5s;
@@ -324,11 +330,14 @@ small{
     position: relative;
     width: 90%;
     height: 31px;
-    background-color: #33a3ee;
-    margin: 0 auto 20px;
     left: 3px;
     top: -8px;
+    background-color: #33a3ee;
+    margin: 0 auto 20px;
     border-radius: 15px;
+    color: #4C1B59;
+    font-weight: 600;
+    cursor: pointer;
 }
 /*--------------------------------------Footer--------------------------------*/
 footer{
@@ -339,4 +348,8 @@ footer h3{
     font-size: 0.7rem;
     font-weight: 400;
     color: #F2F2F2;
+}
+footer h3 a{
+    text-decoration: none;
+    color: var(---purple--dark-2);
 }

@@ -1,6 +1,6 @@
 .welcome-text{
-    left: -78px;
-    margin-top: 40px;
+    left: 34%;
+    margin: 40px 0 0 0;
 }
 .its-me{
     margin-left: 70%;
@@ -13,7 +13,7 @@
 .info-list{
     width: 20%;
     position: fixed;
-    top: 5%;
+    top: 4%;
     margin: 0;
 }
 .interactive-list{
@@ -44,7 +44,7 @@ ul li a{
 }
 .main__content{
     width: 60%;
-    margin: 12% 25% 0;
+    margin: 10% 25% 0;
 }
 .container-about{
     height: 400px;

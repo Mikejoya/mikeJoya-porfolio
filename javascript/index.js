@@ -1,4 +1,3 @@
-console.log('Hola Mundo');
 /*------------------------Efecto de escritura--------------------------*/
 const profession = document.querySelector('.know');
 
@@ -13,20 +12,14 @@ function changeWord(){
     if(writing){
         profession.textContent += word.charAt(counter);
         counter++;
-        /*if(profession.textContent === word){
+        if(counter === word.length){
             writing = false;
-        }*/
-    }/*else{
-        profession.textContent = profession.textContent.slice(0, -1);
-        counter--;
-        if(counter === 0){
-            writing = true;
-            counter = 0;
-            index = (index + 1) % words.length;
+            console.log(word);
         }
-    }    */
+    }
 }
-setInterval(changeWord, 300);
+
+setInterval(changeWord, 180);
 /*----------------------------- animation index----------------------*/
 
 
@@ -83,7 +76,11 @@ buttonLis.forEach((link) =>{
 }
 
 let intervalId = setInterval(function() {
-    changePosition(1);
+    if(window.innerWidth <= 600){
+        changePosition(1);
+    }else{
+        clearInterval(intervalId);
+    }
 }, 6000);
 
 document.addEventListener('visibilitychange', () => {

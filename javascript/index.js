@@ -6,6 +6,7 @@ const words = ["Frontend Developer.", ];
 let index = 0;
 let counter = 0;
 let writing = true; 
+let intervalId;
 
 function changeWord(){
     const word = words[index];
@@ -14,12 +15,12 @@ function changeWord(){
         counter++;
         if(counter === word.length){
             writing = false;
-            console.log(word);
+            clearInterval(intervalId);
         }
     }
 }
 
-setInterval(changeWord, 180);
+intervalId = setInterval(changeWord, 180);
 /*----------------------------- animation index----------------------*/
 
 

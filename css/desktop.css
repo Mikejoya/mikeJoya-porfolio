@@ -7,9 +7,6 @@
     margin-top: -32px;
     margin-bottom: 0;
 }
-.container-about p{
-    width: 86%;
-}
 .info-list{
     width: 20%;
     position: fixed;
@@ -47,8 +44,11 @@ ul li a{
     margin: 10% 25% 0;
 }
 .container-about{
-    height: 400px;
+    height: 330px;
     overflow-y: hidden;
+}
+.container-about p{
+    width: 86%;
 }
 .container-social--media{
     height: 190px;

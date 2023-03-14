@@ -353,7 +353,7 @@ small{
 .thank-content{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     width: 50%;
     height: 200px;
     top: 50%;
@@ -365,18 +365,19 @@ small{
 }
 .thank-content img{
     width: 5%;
-    position: relative;
-    left: 90%;
+    position: absolute;
+    right: 6px;
     top: 6%;
     margin: 16px auto 0;
     background-color: #00e676;
     border-radius: 100%;
+    cursor: pointer;
 }
 .thank-content p{
     width: 80%;
     height: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 30px auto 0;
     padding-top: 60px;
     color: #00e676;
 }

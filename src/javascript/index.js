@@ -32,22 +32,22 @@ buttonLis.forEach((link) =>{
         e.preventDefault();
         const sectionWorksFirts = document.querySelector('.container-slider');
         const sectionWorksSecond = document.querySelector('.slader-container');
-        console.log(sectionWorksFirts);
+        
         
         if(sectionWorksFirts.offsetParent === null){
             sectionWorksFirts.removeAttribute('id');
             sectionWorksSecond.setAttribute('id', 'works');
-            console.log('se fue alto');
+            
         }else{
             sectionWorksFirts.setAttribute('id', 'works');
             sectionWorksSecond.removeAttribute('id');
-            console.log('se fue bajo');
+            
         }
         const currentId = e.target.attributes.href.value;
         const section = document.querySelector(currentId);
         const sectionPos = section.offsetTop;
         
-            console.log(sectionPos)
+            
             section.scrollIntoView({
                 behavior: 'smooth',
             });
@@ -120,12 +120,12 @@ const $form = document.querySelector('#form');
 
 $form.addEventListener('submit', handleSubmit);
 
+const containerThanks = document.querySelector('.thans-contact');
 async function handleSubmit(event){
     event.preventDefault();
 
     const name = document.querySelector('#name').value;
     if(!name){
-        console.log('1');
         showError(document.querySelector('#name'),'El nombre es obligatorio');
         return;
     }else{
@@ -134,7 +134,6 @@ async function handleSubmit(event){
 
     const email = document.querySelector('#email').value;
     if(!validateEmail(email)){
-        console.log('2');
         showError(document.querySelector('#email'),'Email no valido');
         return;
     }else{
@@ -143,7 +142,6 @@ async function handleSubmit(event){
 
     const message = document.querySelector('#message').value;
     if(!message){
-       console.log('3');
         showError(document.querySelector('#message'),'El mensaje es obligatorio');
         return;
     }else{
@@ -161,5 +159,11 @@ async function handleSubmit(event){
     if(response.ok){
         this.reset();
         alert('Gracias por contactarme, Te escribire pronto.');
+        containerThanks.classList.remove('inactive');
     }
 }
+
+const closeCard = document.getElementById('close-card');
+closeCard.addEventListener('click', ()=>{
+    containerThanks.classList.add('inactive');
+});

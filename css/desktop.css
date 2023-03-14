@@ -44,11 +44,12 @@ ul li a{
     margin: 10% 25% 0;
 }
 .container-about{
-    height: 330px;
+    height: 100%;
     overflow-y: hidden;
 }
 .container-about p{
     width: 86%;
+    margin: 0 auto 16px;
 }
 .container-social--media{
     height: 190px;

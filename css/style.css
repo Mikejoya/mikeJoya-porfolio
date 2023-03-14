@@ -5,14 +5,15 @@
     ---gris: #91919180;
     ---gradiant: linear-gradient(to left top, #1e0b26, #190c21, #150d1c, #100d16, #0d0d0d);
 }
-
+html{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.822);
     background-image: linear-gradient(to right bottom, #4c1b59, #3c1c4d, #2e1b40, #221932, #191523, #16131f, #14101a, #100d16, #130d1b, #170d1f, #1a0c23, #1e0b26);
-
 }
 /*--------------------------------Header icon with my photo---------*/
 header{
@@ -74,7 +75,7 @@ main{
     left: -60px;
 }
 .welcome-text p{
-    width: 210px;
+    width: 260px;
     margin: 0;
 }
 .welcome-text h1{
@@ -181,6 +182,7 @@ ul li:hover a{
     overflow: hidden;
 }
 .slider__container{
+    width: 90%;
     display: grid;
     grid-template-columns: 25px 1fr 25px;
     align-items: center;
@@ -214,7 +216,7 @@ ul li:hover a{
     margin: 6px;
 }
 .slider__img{
-    width: 200px;
+    width: 96%;
     height: 125px;
     display: block;
     object-fit: cover;
@@ -223,7 +225,7 @@ ul li:hover a{
 }
 .slider__arrow{
     cursor: pointer;
-    width: 90%;
+    width: 96%;
 }
 .slider__arrow:nth-of-type(2){
     justify-self: end;
@@ -320,7 +322,7 @@ ul li:hover a{
 .space__text:focus ~ label,
 textarea:focus ~ label{
     top: -9px;
-    background-color: transparent;
+    background-color: #0f0d12;
 }
 small{
     position: absolute;
@@ -342,7 +344,7 @@ small{
 }
 /*--------------------------------------Footer--------------------------------*/
 footer{
-    width: 186px;
+    width: 236px;
     margin: 0 auto;
 }
 footer h3{

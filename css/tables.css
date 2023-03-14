@@ -51,5 +51,6 @@
 .reminder{
     width: 500px;
     margin: 0 auto;
+    text-align: center;
     color: #f2f2f2;
 }

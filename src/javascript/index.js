@@ -120,6 +120,7 @@ const $form = document.querySelector('#form');
 
 $form.addEventListener('submit', handleSubmit);
 
+const textError = document.querySelector('.message-info-text');
 const containerThanks = document.querySelector('.thans-contact');
 async function handleSubmit(event){
     event.preventDefault();
@@ -139,7 +140,7 @@ async function handleSubmit(event){
     }else{
         showError(document.querySelector('#email'));
     }
-
+    
     const message = document.querySelector('#message').value;
     if(!message){
         showError(document.querySelector('#message'),'El mensaje es obligatorio');
@@ -158,8 +159,10 @@ async function handleSubmit(event){
     });
     if(response.ok){
         this.reset();
-        alert('Gracias por contactarme, Te escribire pronto.');
         containerThanks.classList.remove('inactive');
+    }else{
+        containerThanks.classList.remove('inactive');
+        textError.innerText = 'Sus datos no son correctos o se produjo un error al envior sus datos.';
     }
 }
 

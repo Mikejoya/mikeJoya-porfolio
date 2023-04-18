@@ -1,3 +1,4 @@
+@media (min-width: 600px) {
 .logos-identifiers{
     height: 86%;
 }
@@ -53,4 +54,5 @@
     margin: 0 auto;
     text-align: center;
     color: #f2f2f2;
+}
 }

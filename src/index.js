@@ -1,3 +1,8 @@
+import './css/style.css';
+import './css/desktop.css';
+import './css/tables.css';
+
+
 /*------------------------Efecto de escritura--------------------------*/
 const profession = document.querySelector('.know');
 

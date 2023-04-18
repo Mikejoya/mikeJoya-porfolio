@@ -146,8 +146,8 @@ async function handleSubmit(event){
         showError(document.querySelector('#email'));
     }
     
-    const message = document.querySelector('#message').value;
-    if(!message){
+    const message = document.querySelector('#message').value.trim();
+    if(message.trim().length < 10){
         showError(document.querySelector('#message'),'El mensaje es obligatorio');
         return;
     }else{
